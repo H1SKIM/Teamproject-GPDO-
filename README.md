@@ -67,7 +67,6 @@ project/
 | **Plotter / Heatmap / Boxplot** | Result visualization | Decoupled from analysis logic → graph format changes independently |
 | **CSV** | Parameter-table output | Produces the final deliverable |
 
-> **Design principle:** When a new device is added, only its *parsing rules and fitting model* need defining; the shared flow (folder traversal, visualization, CSV) is reused as-is. We proved this by starting with GPDO and extending to MZM (LMZC · LMZO).
 
 ---
 
@@ -100,8 +99,6 @@ R [A/W]    = Iph / P_in
 ```
 
 `I_photo` is the element-wise difference of the light/dark sweeps. `P_in` is back-calculated from the fiber output power and the reference spectrum insertion loss at the measurement wavelength.
-
-> **Note on the photocurrent graph shape:** Because `I_light` and `I_dark` have different zero-crossing points on the IV curve, `I_photo = I_light − I_dark` briefly changes sign near the flat region. Applying the absolute value produces an abrupt V-shaped dip at that point. This is **expected behavior**, not a measurement error.
 
 ---
 
