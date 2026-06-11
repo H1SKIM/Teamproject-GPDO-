@@ -8,7 +8,7 @@
 
 ---
 
-## 1. The Problem We Solve
+## 1. Introduction
 
 In silicon photonics fabrication, a single wafer holds dozens of optical device dies, and each die produces its own XML measurement file. Manually opening these files, plotting graphs, and extracting parameters is **time-consuming and error-prone.**
 
