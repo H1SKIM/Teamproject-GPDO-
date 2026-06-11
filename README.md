@@ -62,7 +62,7 @@ project/
 | Module | Responsibility | Design Intent |
 |--------|----------------|---------------|
 | **Parser** | XML → raw-data dict | Handles *parsing only*, even when XML structure differs per device |
-| **Fitting** | Physical-model fitting & parameter computation | Separated from parsing → reusable even if measurement format changes |
+| **Fitting** | Physical-model fitting & parameter computation | Separated from parsing |
 | **Analyzer** | Folder traversal, quality check, stage calls | Integrates the full workflow |
 | **Plotter / Heatmap / Boxplot** | Result visualization | Decoupled from analysis logic → graph format changes independently |
 | **CSV** | Parameter-table output | Produces the final deliverable |
